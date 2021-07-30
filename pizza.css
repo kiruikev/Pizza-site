@@ -21,6 +21,18 @@ table{
     font-size: 20px;
     color: darkgoldenrod;
 }
-.info{
-    
+.pizza-size{
+            color: rgb(9, 139, 59);
+            size: 10px;
+            font-family: monospace;
+            padding-left: 50px;
+            padding-bottom: 30px;
+}
+.seperate{
+    padding-top: 20px;
+    background-color: rgb(127, 129, 7);
+}
+.button{
+    padding-left: 100px;
+    padding-top: 30px;
 }
