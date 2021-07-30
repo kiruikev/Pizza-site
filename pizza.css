@@ -1,0 +1,26 @@
+body{
+    background-color: darkslategray;
+}
+.header{
+    padding-left: 300px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: rgb(6, 109, 41);
+    font-size: 30px;
+}
+.Tittle{
+    color: rgb(48, 199, 18);
+}
+table{
+    width: fit-content;
+}
+.intro {
+    padding-bottom: 50px;
+    padding-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: darkgoldenrod;
+}
+.info{
+    
+}
