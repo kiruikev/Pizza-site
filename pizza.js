@@ -18,16 +18,23 @@
 //     })
 
 // })
-function Contact(size, crust, topping) {
-    this.size = size;
-    this.crust = crust;
-    this.topping = topping
-  }
+// function order(size, crust, topping) {
+//     this.size = size;
+//     this.crust = crust;
+//     this.topping = topping
+  // }
 $(document).ready(function() {
     $("#proced").click(function(event){
         event.preventDefault();
-        var size = document.getElementById("#pizza-size")
-        var crust = document.getElementById("#Crust")
+        $(".results").show(function(){
+          var size = document.getElementById("pizza-size")
+          var size__output = size.options[size.selectedIndex].value
+          var crust = document.getElementById("Crust")
+          var crust_output = crust.options[crust.selectedIndex].value
+          var topping = document.getElementById("topping")
+          var topping__output = topping.options[topping.selectedIndex].value
+           $(".results").text("You have ordered " + "(  " + size__output +  " pizza " + " with " + crust_output + " crust " + " and " + topping__output + " topping. ")
+        })
         
 })
 })

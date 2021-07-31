@@ -1,5 +1,9 @@
 body{
-    background-color: darkslategray;
+    background: darkslategray;
+}
+.bg{
+    background-image: url(file:///home/kk/Downloads/IPimages/photo-1590947132387-155cc02f3212.jpeg);
+    background-size: cover;
 }
 .header{
     padding-left: 300px;
@@ -35,4 +39,7 @@ table{
 .button{
     padding-left: 100px;
     padding-top: 30px;
+}
+.results{
+    display: none;
 }
