@@ -1,0 +1,33 @@
+// var large = document.getElementById("Large").value();
+// var small = document.getElementById("small").value();
+// var medium = document.getElementById("Medium").value();
+// var crispy = document.getElementById("Crispy").value();
+// var stuffed = document.getElementById("Stuffed").value();
+// var gluten = document.getElementById("Gluten").value();
+// var bacon = document.getElementById("Bacon").value();
+// var sausage = document.getElementById("Sausage").value();
+// vvar pepperoni = document.getElementById("Pepperoni").value();var large = document.getElementById("Large").value();
+// $(document).ready(function() {
+//     $("#proced").click(function(){
+//         function results(size) {
+//             this.size = size
+       
+//           }
+//           var size = document.getElementById("pizza-size")
+
+//     })
+
+// })
+function Contact(size, crust, topping) {
+    this.size = size;
+    this.crust = crust;
+    this.topping = topping
+  }
+$(document).ready(function() {
+    $("#proced").click(function(event){
+        event.preventDefault();
+        var size = document.getElementById("#pizza-size")
+        var crust = document.getElementById("#Crust")
+        
+})
+})
