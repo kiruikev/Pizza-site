@@ -2,7 +2,7 @@ body{
     background: darkslategray;
 }
 .bg{
-    background-image: url(file:///home/kk/Downloads/IPimages/photo-1590947132387-155cc02f3212.jpeg);
+    background-image: url(https://raw.githubusercontent.com/kiruikev/Pizza-site/main/unnamed.jpg);
     background-size: cover;
 }
 .header{
@@ -42,4 +42,25 @@ table{
 }
 .results{
     display: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: chartreuse;
+}
+#confirm{
+    display: none;
+}
+.cofitm{
+    display: none;
+}
+input#proced{
+    background-color: rgb(162, 255, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media only screen and (max-width: 600){
+    .header{
+        padding-left: 50px;
+        padding-top: 0px;
+        padding-bottom: 50px;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+    }
 }

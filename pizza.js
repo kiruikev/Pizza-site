@@ -33,7 +33,9 @@ $(document).ready(function() {
           var crust_output = crust.options[crust.selectedIndex].value
           var topping = document.getElementById("topping")
           var topping__output = topping.options[topping.selectedIndex].value
-           $(".results").text("You have ordered " + "(  " + size__output +  " pizza " + " with " + crust_output + " crust " + " and " + topping__output + " topping. ")
+           $(".results").text("You have ordered " + "(  " + size__output +  " pizza " + " with " + crust_output + " crust " + " and " + topping__output + " topping. " + ")")
+           $("#confirm").show()
+           $(".cofitm").show()
         })
         
 })
