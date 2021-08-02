@@ -23,20 +23,37 @@
 //     this.crust = crust;
 //     this.topping = topping
   // }
+
 $(document).ready(function() {
     $("#proced").click(function(event){
         event.preventDefault();
         $(".results").show(function(){
           var size = document.getElementById("pizza-size")
-          var size__output = size.options[size.selectedIndex].value
+          var size__output = size.options[size.selectedIndex].value 
           var crust = document.getElementById("Crust")
-          var crust_output = crust.options[crust.selectedIndex].value
+          var crust_output = crust.options[crust.selectedIndex].value 
           var topping = document.getElementById("topping")
-          var topping__output = topping.options[topping.selectedIndex].value
-           $(".results").text("You have ordered " + "(  " + size__output +  " pizza " + " with " + crust_output + " crust " + " and " + topping__output + " topping. " + ")")
-           $("#confirm").show()
-           $(".cofitm").show()
+          var topping__output = topping.options[topping.selectedIndex].value 
+          var amount = (size__output + crust_output + topping__output)
+          $(".inputs").show(function(){
+            $("#Yes").click(function(){
+              prompt("Where do you Live: ")
+              alert("You will pay" + amount + "When rider comes")
+            })
+            $(".no").click(function(){
+              alert("You will pay " + amount)
+            })
+
+          //  let calc = $(".results").text("Your total amount is  " + crust_output  + topping__output + ")")
+           
+          
         })
-        
+      })
+
 })
+         
+     
+
+            
+       
 })
