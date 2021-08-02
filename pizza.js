@@ -21,7 +21,7 @@ $(document).ready(function() {
               prompt("Where do you Live: ")
               var intrest = (300)
               var payment = final + intrest
-              alert("You will pay" + " " + payment + "Delivery intrest is 300")
+              alert("You will pay" + " " + payment + "" + "Delivery intrest is 300")
               
             })
             $(".no").click(function(){
