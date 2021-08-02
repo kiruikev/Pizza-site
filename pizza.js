@@ -34,11 +34,16 @@ $(document).ready(function() {
           var crust_output = crust.options[crust.selectedIndex].value 
           var topping = document.getElementById("topping")
           var topping__output = topping.options[topping.selectedIndex].value 
-          var amount = (size__output + crust_output + topping__output)
+          var sz = parseInt(size__output)
+          var top = parseInt(crust_output)
+          var cr = parseInt(topping__output)
+          
+          var amount = (sz + top + cr)
           $(".inputs").show(function(){
             $("#Yes").click(function(){
               prompt("Where do you Live: ")
-              alert("You will pay" + amount + "When rider comes")
+              alert("You will pay" + " " + amount + "When rider comes")
+              
             })
             $(".no").click(function(){
               alert("You will pay " + amount)
