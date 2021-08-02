@@ -1,28 +1,3 @@
-// var large = document.getElementById("Large").value();
-// var small = document.getElementById("small").value();
-// var medium = document.getElementById("Medium").value();
-// var crispy = document.getElementById("Crispy").value();
-// var stuffed = document.getElementById("Stuffed").value();
-// var gluten = document.getElementById("Gluten").value();
-// var bacon = document.getElementById("Bacon").value();
-// var sausage = document.getElementById("Sausage").value();
-// vvar pepperoni = document.getElementById("Pepperoni").value();var large = document.getElementById("Large").value();
-// $(document).ready(function() {
-//     $("#proced").click(function(){
-//         function results(size) {
-//             this.size = size
-       
-//           }
-//           var size = document.getElementById("pizza-size")
-
-//     })
-
-// })
-// function order(size, crust, topping) {
-//     this.size = size;
-//     this.crust = crust;
-//     this.topping = topping
-  // }
 
 $(document).ready(function() {
     $("#proced").click(function(event){
@@ -37,16 +12,20 @@ $(document).ready(function() {
           var sz = parseInt(size__output)
           var top = parseInt(crust_output)
           var cr = parseInt(topping__output)
-          
+          var quantity = document.getElementById("quantity").value
+          var f = parseInt(quantity)
           var amount = (sz + top + cr)
+          var final = amount*f
           $(".inputs").show(function(){
             $("#Yes").click(function(){
               prompt("Where do you Live: ")
-              alert("You will pay" + " " + amount + "When rider comes")
+              var intrest = (300)
+              var payment = final + intrest
+              alert("You will pay" + " " + payment + "Delivery intrest is 300")
               
             })
             $(".no").click(function(){
-              alert("You will pay " + amount)
+              alert("You will pay " + final)
             })
 
           //  let calc = $(".results").text("Your total amount is  " + crust_output  + topping__output + ")")
